@@ -1,0 +1,29 @@
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: var(--accent-s);
+  font-size: 0.8rem;
+  width: fit-content;
+  margin: auto;
+  gap: .5rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  border-radius: 2px;
+  background-color: var(--accent);
+  color: var(--white);
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: transparent;
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+}

@@ -1,0 +1,38 @@
+.hero {
+  min-height: 30vh;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+  width: 60%;
+  margin: auto;
+}
+
+@media only all and (max-width: 1540px) {
+  .hero h1 {
+    width: 80%;
+  }
+}
+
+@media only all and (max-width: 1280px) {
+  .hero {
+    min-height: 10vh;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only all and (max-width: 425px)  {
+
+  .hero h1 {
+    font-size: 2rem;
+    margin: 0;
+    width: 100%;
+  }
+}
