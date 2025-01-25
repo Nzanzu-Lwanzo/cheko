@@ -1,3 +1,125 @@
 .jokes-list {
-    min-height: 100vh;
+  min-height: 100vh;
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 2rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  background-color: var(--white);
+  /* padding: 1rem; */
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 6px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  height: fit-content;
+}
+
+.image {
+  min-height: 150px;
+  background-color: var(--accent-s);
+  position: relative;
+}
+
+.grid-item:not(:has(.image img)) .title {
+  background-color: var(--accent);
+  color: var(--black);
+}
+
+.title {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+
+  h2 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.btns .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 1px solid var(--black);
+  gap: 0.2rem;
+}
+
+.btns .icon:hover {
+  background-color: var(--black);
+  color: var(--accent);
+
+  svg {
+    stroke: var(--accent);
+  }
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.author-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--accent);
+  font-weight: bold;
+  color: var(--black);
+}
+
+.imp {
+  font-weight: bold;
+}
+
+@media only all and (max-width: 500px) {
+  .grid-item {
+    width: 100%;
+  }
+}
+
+@media only all and (max-width: 425px) {
+  .jokes-list {
+    gap: 1rem;
+  }
+
+  .title h2 {
+    font-size: 1.6rem;
+  }
+
+  .author {
+    strong {
+      display: block;
+    }
+  }
 }

@@ -73,7 +73,7 @@ section {
   }
 }
 
-@media only all and (max-width: 12800px) {
+@media only all and (max-width: 1280px) {
   section {
     width: 90%;
   }
@@ -81,6 +81,6 @@ section {
 
 @media only all and (max-width: 425px) {
   section {
-    padding-inline: 1rem;
+    padding-inline: .5rem;
   }
 }

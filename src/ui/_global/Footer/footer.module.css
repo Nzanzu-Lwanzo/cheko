@@ -1,0 +1,43 @@
+.footer {
+  padding: 1rem 2rem;
+  border-top: 1px solid var(--black);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 60%;
+  margin: auto;
+  font-size: 0.8rem;
+
+  & > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .imp {
+    font-weight: bold;
+  }
+}
+
+.action {
+  color: inherit;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  transition: 0.2s ease-out;
+}
+
+.action:hover {
+  background-color: var(--accent);
+}
+
+@media only all and (max-width: 1000px) {
+  .content {
+    width: 100%;
+  }
+}
