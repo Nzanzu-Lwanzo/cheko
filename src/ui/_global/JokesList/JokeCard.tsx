@@ -27,7 +27,7 @@ const JokeCard = () => {
               </span>
               <span>10k</span>
             </button>
-            <button class={style.icon}>
+            <button class={`${style.icon}`}>
                 <span>😂</span>
                 <span>1.2k</span>
             </button>

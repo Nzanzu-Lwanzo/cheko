@@ -1,7 +1,6 @@
-import Header from "../ui/_global/header";
 import Hero from "../ui/home/Hero";
 import JokesList from "../ui/_global/JokesList";
-import FilterAndSearch from "../ui/_global/FilterAndSearch";
+import Header from "../ui/_global/header";
 import Footer from "../ui/_global/Footer";
 
 const HomePage = () => {

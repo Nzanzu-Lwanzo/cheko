@@ -1,12 +1,11 @@
 import type { Component } from "solid-js";
-import HomePage from "./pages/HomePage";
+import { children } from "solid-js";
+import { RouteSectionProps } from "@solidjs/router";
+import { AppContextProvider } from "./lib/context";
 
-const App: Component = () => {
-  return (
-    <>
-      <HomePage />
-    </>
-  );
+const App: Component<RouteSectionProps<unknown>> = (props) => {
+
+  return <AppContextProvider>{props.children}</AppContextProvider>;
 };
 
 export default App;

@@ -1,14 +1,22 @@
+import { useAppContext } from "../../../lib/context";
 import style from "./header.module.css";
 import AuthUI from "./pieces/AuthUI";
+import { A } from "@solidjs/router";
 
 const Header = () => {
+  const { authUser } = useAppContext();
+
   return (
     <header class={style.header}>
-      <div class={style.logo}>😂</div>
+      <A href="/" class={style.logo}>
+        😂
+      </A>
       <div class={style.actions}>
-        <button type="button" class="btn-1">
-          Post a Joke
-        </button>
+        {authUser() && (
+          <A href="/post-a-joke" class="btn-1">
+            Post a Joke
+          </A>
+        )}
         <AuthUI />
       </div>
     </header>

@@ -1,0 +1,30 @@
+.postAJokePage {
+  min-height: 100dvh;
+  width: 100dvw;
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.postAJokeCard {
+  min-height: 80dvh;
+  width: 60%;
+  margin: auto;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-weight: bold;
+}
